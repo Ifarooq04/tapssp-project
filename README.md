@@ -1,11 +1,11 @@
 # tapssp-project
 Final project for CSC363/463 Safe Systems
-# tapssp-project — LockBox
+# tapssp-project — Name: LockBox
 
-## One-paragraph summary
+## Summary: One paragraph
 LockBox is a Rust CLI that encrypts and decrypts files using AEAD with per-file random keys wrapped by a master key in the OS keyring. It focuses on safe key handling, zeroizing secrets, and a minimal, hard-to-misuse API.
 
-## Why systems
+## Why Choosing systems
 - Careful memory ownership of secrets with `zeroize`.
 - Streams large files with bounded memory.
 - OS integration for key storage.
@@ -17,5 +17,5 @@ LockBox is a Rust CLI that encrypts and decrypts files using AEAD with per-file 
 
 ## Crates
 - `ring` or `aes-gcm`, `rand`, `clap`, `zeroize`.
-docs: add project topic and MVP
+
 
