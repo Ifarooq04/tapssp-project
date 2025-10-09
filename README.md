@@ -17,5 +17,3 @@ LockBox is a Rust CLI that encrypts and decrypts files using AEAD with per-file 
 
 ## Crates
 - `ring` or `aes-gcm`, `rand`, `clap`, `zeroize`.
-
-
