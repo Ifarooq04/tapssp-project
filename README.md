@@ -136,3 +136,13 @@ This project clarified what “secure system design” means in practice. Most o
 **Takeaway**
 LockBox is intentionally small, focused, and carefully designed.
 It demonstrates safe systems principles through real implementation choices rather than theoretical discussion.
+
+
+** Security Notes & Limitations **
+This project is designed as a learning-focused secure system and makes the following assumptions:
+- Files are encrypted and decrypted in-memory rather than streamed
+- Secure memory locking (e.g., mlock) is not used for portability reasons
+- The threat model assumes a trusted local OS and keyring
+- Side-channel resistance is out of scope
+
+These tradeoffs were made intentionally to prioritize correctness, clarity, and safe design.
